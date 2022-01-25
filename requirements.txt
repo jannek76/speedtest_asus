@@ -1,0 +1,5 @@
+flatten-json
+python-dateutil
+influxdb-client
+tenacity
+hiyapyco

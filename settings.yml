@@ -1,0 +1,20 @@
+
+ROUTER: "router ip address" # Router IP address
+PORT: 22                    # SSH server port
+USER: "your_username"       # Router username
+SSH_KEY: "your_password"    # SSH key location
+LOG_LEVEL: "INFO"           # Logging level
+TIME_BETWEEN_CALLS: 0.2     # Time between sequential calls, (seconds)
+RETRIES: 3                  # how many time retry
+RETRY_INTERVAL: 0.4         # wait time between retry call seconds
+
+OOKLA:
+  response: json                 # Format to response
+  configuration: "filename/path" # Configuration file name to ookla
+
+INFLUXDB:
+  USEINFLUX: False
+  ifurl: "host ip/name and port"    # Influx server IP  <ip_address>:<port>
+  iftoken: "your token to InfluxDB" # Authentication token
+  iforg: "influx organization"      # Organization
+  ifbucket: "bucket to data"        # Bucket to put data
